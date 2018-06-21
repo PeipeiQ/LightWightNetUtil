@@ -15,6 +15,8 @@
 		9699DD0320DB66B600896914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD0220DB66B600896914 /* main.m */; };
 		9699DD0D20DB66B600896914 /* LightWightNetUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD0C20DB66B600896914 /* LightWightNetUtilTests.m */; };
 		9699DD1820DB66B600896914 /* LightWightNetUtilUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD1720DB66B600896914 /* LightWightNetUtilUITests.m */; };
+		9699DD2820DB686D00896914 /* NetUtilManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD2720DB686D00896914 /* NetUtilManager.m */; };
+		9699DD2C20DB7A8600896914 /* NSObject+DictToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD2B20DB7A8600896914 /* NSObject+DictToModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9699DD1320DB66B600896914 /* LightWightNetUtilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightWightNetUtilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9699DD1720DB66B600896914 /* LightWightNetUtilUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightWightNetUtilUITests.m; sourceTree = "<group>"; };
 		9699DD1920DB66B600896914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9699DD2620DB686D00896914 /* NetUtilManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetUtilManager.h; sourceTree = "<group>"; };
+		9699DD2720DB686D00896914 /* NetUtilManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetUtilManager.m; sourceTree = "<group>"; };
+		9699DD2A20DB7A8600896914 /* NSObject+DictToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DictToModel.h"; sourceTree = "<group>"; };
+		9699DD2B20DB7A8600896914 /* NSObject+DictToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DictToModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		9699DCF220DB66B500896914 /* LightWightNetUtil */ = {
 			isa = PBXGroup;
 			children = (
+				9699DD2520DB681400896914 /* NetUtil */,
 				9699DCF320DB66B500896914 /* AppDelegate.h */,
 				9699DCF420DB66B500896914 /* AppDelegate.m */,
 				9699DCF620DB66B500896914 /* ViewController.h */,
@@ -130,6 +137,25 @@
 				9699DD1920DB66B600896914 /* Info.plist */,
 			);
 			path = LightWightNetUtilUITests;
+			sourceTree = "<group>";
+		};
+		9699DD2520DB681400896914 /* NetUtil */ = {
+			isa = PBXGroup;
+			children = (
+				9699DD2920DB7A0900896914 /* DictToModel */,
+				9699DD2620DB686D00896914 /* NetUtilManager.h */,
+				9699DD2720DB686D00896914 /* NetUtilManager.m */,
+			);
+			path = NetUtil;
+			sourceTree = "<group>";
+		};
+		9699DD2920DB7A0900896914 /* DictToModel */ = {
+			isa = PBXGroup;
+			children = (
+				9699DD2A20DB7A8600896914 /* NSObject+DictToModel.h */,
+				9699DD2B20DB7A8600896914 /* NSObject+DictToModel.m */,
+			);
+			path = DictToModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +290,9 @@
 			files = (
 				9699DCF820DB66B500896914 /* ViewController.m in Sources */,
 				9699DD0320DB66B600896914 /* main.m in Sources */,
+				9699DD2C20DB7A8600896914 /* NSObject+DictToModel.m in Sources */,
 				9699DCF520DB66B500896914 /* AppDelegate.m in Sources */,
+				9699DD2820DB686D00896914 /* NetUtilManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

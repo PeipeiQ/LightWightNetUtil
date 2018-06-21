@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NetUtilManager.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NetUtilManager *manager = [NetUtilManager manager];
+    [manager getFromUrl:@"/content" para:nil successResult:^(id response, NSHTTPURLResponse *httpResponse) {
+        
+    } errorResult:^( NSError *error, NSHTTPURLResponse *httpResponse) {
+        
+    }];
+    
+    
 }
 
 
